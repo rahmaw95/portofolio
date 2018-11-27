@@ -1,0 +1,57 @@
+/*  Position */
+
+.p\:r {
+	position: relative;
+}
+.p\:a {
+	position: absolute;
+}
+.p\:f {
+	position: fixed;
+}
+.p\:s {
+	position: -webkit-sticky;
+	position: sticky;
+}
+
+._t\:0 {
+	top: 0;
+}
+._r\:0 {
+	right: 0;
+}
+._r\:15{
+	right: 15px;
+}
+._b\:0 {
+	bottom: 0;
+}
+._l\:0 {
+	left: 0;
+}
+
+._t\:100 {
+	top: 100%;
+}
+._r\:100 {
+	right: 100%;
+}
+._b\:100 {
+	bottom: 100%;
+}
+._l\:100 {
+	left: 100%;
+}
+
+.z\:1 {
+	z-index: 1;
+}
+.z\:2 {
+	z-index: 2;
+}
+.z\:3 {
+	z-index: 3;
+}
+.z\:4 {
+	z-index: 4;
+}

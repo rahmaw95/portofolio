@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import ProtectedRoute from './routes';
 import Landing from './containers/Landing';
 import Dashboard from './containers/Dashboard';
+import './styles/style.scss';
 
 const App = () => (
     <div>

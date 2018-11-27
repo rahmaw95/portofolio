@@ -1,0 +1,71 @@
+/*  Layout */
+.d\:f {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+.d\:i_f {
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+}
+.d\:i {
+	display: inline;
+}
+.d\:b {
+	display: block;
+}
+.d\:i_b {
+	display: inline-block;
+}
+.d\:t {
+	display: table;
+}
+.d\:t_c {
+	display: table-cell;
+}
+
+.o\:h {
+	overflow: hidden;
+}
+.o\:s {
+	overflow: scroll;
+}
+.o\:a {
+	overflow: auto;
+}
+
+.h\:full {
+	height: 100%;
+}
+
+.w\:full {
+	width: 100%;
+}
+
+.o_x\:s {
+	overflow-x: scroll;
+} 
+
+.o_x\:h {
+	overflow-x: hidden;
+}
+.o_y\:s {
+	overflow-y: scroll;
+}
+
+.c\:p {
+	cursor: pointer;
+}
+
+.o_f\:c {
+	-o-object-fit: cover;
+	   object-fit: cover;
+}
+
+.pull\:r{
+	float: right;
+}
+.pull\:l{
+	float: left;
+}

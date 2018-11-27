@@ -1,0 +1,256 @@
+
+
+.loading-spinner {
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    &:after {
+        content: " ";
+        display: block;
+        width: 46px;
+        height: 46px;
+        margin: 1px;
+        border-radius: 50%;
+        border: 5px solid #fff;
+        border-color: #bbb transparent #bbb transparent;
+        animation: rotate-forever 1.2s linear infinite;
+      }
+}
+@-webkit-keyframes rotate-forever {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@-moz-keyframes rotate-forever {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes rotate-forever {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+input {
+    height: 40px;
+    background-color: #f7f7f7;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+button:disabled {
+    cursor: not-allowed;
+}
+
+input,
+button,
+select {
+    font-family: 'Lato', sans-serif;
+}
+
+
+a {
+    text-decoration: none;
+    color: #191919;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+hr {
+    height: 1px;
+    background-color: #e8e8e8;
+}
+
+.divider {
+    position: relative;
+    text-align: center;
+    span {
+        position: relative;
+        background-color: #fff;
+        padding-left: 15px;
+        padding-right: 15px;
+        z-index: 1;
+    }
+    &:after {
+        content: '';
+        top: 50%;
+        left: -25px;
+        right: -25px;
+        height: 1px;
+        background-color: rgba(0, 0, 0, 0.1);
+        position: absolute;
+    }
+}
+
+.breadcrumb {
+    a, 
+    span {
+        font-size: 12px;
+    }
+    
+    > div:not(:last-child) {
+        margin-right: 15px;
+        position: relative;
+        &:after {
+            content: '>';
+            position: absolute;
+            top: 0px;
+            right: -12px;
+            color: map-get($colors, 'primary');
+        }
+        a {
+            color: map-get($colors, 'primary');
+        }
+    }
+}
+
+.small-thumbnail {
+    height: 100px;
+    width: 100px;
+    margin: 0px auto;
+    background-size: cover;
+    background-position: center center;
+    img {
+        display: none;
+    }
+}
+
+.portrait-thumbnail {
+    height: 104px;
+    width: 82px;
+}
+
+.gallery-container {
+    position: relative;
+    z-index: 3;
+    width: 580px;
+}
+
+.placeholder-grey {
+	&::-webkit-input-placeholder {
+        color: #a4a4a4; 
+    }
+    &::-moz-placeholder { 
+        color: #a4a4a4;
+    }
+    &:-ms-input-placeholder { 
+        color: #a4a4a4;
+    }
+    &:-moz-placeholder {
+        color: #a4a4a4;
+    }
+}
+
+.placeholder-italic {
+	&::-webkit-input-placeholder {
+        font-style: italic;
+    }
+    &::-moz-placeholder { 
+        font-style: italic;
+    }
+    &:-ms-input-placeholder { 
+        font-style: italic;
+    }
+    &:-moz-placeholder {
+        font-style: italic;
+    }
+}
+
+.img-responsive { 
+    display: block; 
+    width: 100%; 
+} 
+
+
+ul.tabs{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-align:center;
+}
+ul.tabs li{
+    background: none;
+    display: inline-block;
+    padding: 10px 23px;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 600;
+    a{
+        color: #A4A4A4;
+        &:hover{
+            text-decoration: none;
+            color: #191919
+        }
+    }
+    @media (max-width: 767px){
+        font-weight: 400;
+        padding: 10px 0px;
+    }
+}
+
+ul.tabs li.current{
+    a{
+        color: #191919;
+        font-weight: 600;
+        @media (max-width: 767px){
+            font-weight: 400;
+        }
+    }
+    @media (max-width: 767px){
+        border-bottom: 1px solid #1f1f1f;
+        font-weight: 400;
+        padding: 10px 0px;
+    }
+
+}
+
+.tab-content{
+    display: none;
+}
+
+.tab-content.current{
+    display: inline-flex;
+    @media (max-width: 767px){
+        display: block;
+    }
+}
+
+.brand-slider {
+    .slick-track {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+}
+
+.no-current{
+    color: #191919;
+    font-weight: 600;
+    &:hover{
+        color: #191919; 
+        text-decoration: none;
+        font-weight: 600;
+    }
+}
+
+.header-tab {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 4;
+}

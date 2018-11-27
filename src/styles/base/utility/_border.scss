@@ -1,0 +1,116 @@
+/*  Border */
+
+.b {
+	border-style: solid;
+	border-width: 1px;
+}
+
+.b\:t {
+	border-top-style: solid;
+	border-top-width: 1px;
+}
+
+.b\:r {
+	border-right-style: solid;
+	border-right-width: 1px;
+}
+
+.b\:b {
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+}
+
+.b\:l {
+	border-left-style: solid;
+	border-left-width: 1px;
+}
+
+.b_w\:2 {
+	border-width: 2px;
+	&.b\:t {
+		border-top-style: solid;
+		border-top-width: 2px;
+	}
+
+	&.b\:r {
+		border-right-style: solid;
+		border-right-width: 2px;
+	}
+
+	&.b\:b {
+		border-bottom-style: solid;
+		border-bottom-width: 2px;
+	}
+
+	&.b\:l {
+		border-left-style: solid;
+		border-left-width: 2px;
+	}
+}
+
+.b\:0 {
+	border: 0;
+}
+
+.b_r\:half {
+	border-radius: 50%;
+}
+
+$radius: '4', '6', '10', '18', '20';
+
+@each $size in $radius {
+	.b_r\:#{$size} {
+		border-radius: #{$size}px;
+	}
+}
+
+.b_r\@m {
+	@media (max-width: 767px){
+		border-radius: 4px;
+	}
+}
+
+.b_r\:t {
+	border-radius: 4px 4px 0 0;
+}
+.b_r\:r {
+	border-radius: 0 4px 4px 0;
+}
+.b_r\:b {
+	border-radius: 0 0 4px 4px;
+}
+.b_r\:l {
+	border-radius: 4px 0 0 4px;
+}
+
+.b_r\:none {
+	border-radius: 0;
+}
+
+.b_box {
+	background: #ffffff;
+	box-shadow: 0 2px 4px 0 rgba(187, 187, 187, 0.5);
+	border-radius: 5px;
+}
+
+.b_s {
+	box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.05);
+}
+
+.hv_b_s:hover {
+	box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.05);
+}
+
+.b_s_lg {
+	box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.05);
+}
+
+.hv_b_s_lg:hover {
+	box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.2);
+}
+.b_w\:20{
+	border: 20px solid rgb(245, 245, 245);
+}
+.b_w\:10{
+	border: 10px solid rgb(245, 245, 245);
+}

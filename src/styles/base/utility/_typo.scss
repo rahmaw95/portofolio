@@ -1,0 +1,123 @@
+/*  Typography */
+
+$fontWeights: '300', '400', '500', '700';
+
+.f_f\:i {
+    font-family: inherit;
+}
+.f_s\:i {
+    font-size: inherit;
+}
+.t_d\:none {
+    text-decoration: none;
+}
+
+.f_w\:b {
+    font-weight: bolder;
+}
+.f_w\:r {
+    font-weight: normal;
+}
+.f_w\:i {
+    font-style: italic;
+}
+.t_t\:u {
+    text-transform: uppercase;
+}
+.t_t\:c {
+    text-transform: capitalize;
+}
+.t_t\:l {
+    text-transform: lowercase;
+}
+
+.t_a\:l {
+    text-align: left;
+}
+.t_a\:c {
+    text-align: center;
+}
+.t_a\:r {
+    text-align: right;
+}
+.t_a\:j {
+    text-align: justify;
+}
+
+.w_s\:nw {
+    white-space: nowrap;
+}
+.w_w\:b_w {
+    word-wrap: break-word;
+}
+
+.l_h\:1 {
+    line-height: 1;
+}
+.l_h\:2 {
+    line-height: 1.2;
+}
+.l_h\:3 {
+    line-height: 1.3;
+}
+.l_h\:4 {
+    line-height: 1.4;
+}
+.l_h\:5 {
+    line-height: 1.5;
+}
+.l_h\:20{
+    line-height: 2;
+}
+.l_h\:150{
+    line-height:150px;
+}
+
+.l_s\:\.5 {
+    letter-spacing: .5px;
+}
+.l_s\:1 {
+    letter-spacing: 1px;
+}
+.l_s\:2 {
+    letter-spacing: 2px;
+}
+.l_s\:3 {
+    letter-spacing: 3px;
+}
+
+.l_s\:none {
+    list-style: none;
+}
+.t_d\:u {
+    text-decoration: underline;
+}
+.t_d\:l_t {
+    text-decoration: line-through;
+}
+
+.t_d\:n {
+    text-decoration: none !important;
+}
+
+@each $fontWeight in $fontWeights {
+    .f_w\:#{$fontWeight} {
+        font-weight: #{$fontWeight};
+    }
+}
+
+@media (max-width: 767px) {
+    .t_a\:l\@m {
+        text-align: left;
+    }
+    .t_a\:c\@m {
+        text-align: center;
+    }
+    .t_a\:r\@m {
+        text-align: right;
+    }
+    .t_a\:j\@m {
+        text-align: justify;
+    }
+    
+}

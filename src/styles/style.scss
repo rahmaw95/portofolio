@@ -1,0 +1,48 @@
+$colors: (
+    'transparent'   : 'transparent',
+    'primary'       : #191919,
+    'dark'          : #4a4a4a,
+    'red'           : #ed1c24,
+    'softRed'       : #fbe9e7,
+    'grey'          : #888888,
+    'silver'        : #c5c5c5,
+    'smoothGrey'    : #e8e8e8,
+    'softGrey'      : #f3f3f3,
+    'lightGrey'     : #f7f7f7,
+    'darkGrey'      : #5a5a5a,
+    'linkGrey'      : #a4a4a4,
+    'borderGrey'    : #d8d8d8,
+    'thinGrey'      : #eeeeee,
+    'secondary'     : blue,
+    'mute'          : grey,
+    'warning'       : #ffeac8,
+    'danger'        : red,
+    'success'       : #2fd196,
+    'facebook'      : #005bb6,
+    'instagram'     : #e4405f,
+    'twitter'       : #55acee,
+    'google'        : #dd4b39,
+    'youtube'       : #cd201f,
+    'white'         : #fff,
+    'black'         : #000,
+    'niceblue'      : #005bb6,
+    'green'         : #4caf50,
+    'softGreen'     : #e8f5e9,
+    'violet'        : #4e2688,
+    'tangerine'     : #f57c00,
+    'turquoise'     : #3fd0bb,
+    'gallery'       : #f0f0f0,
+    'mds'           : #EB1C2D,
+    'linkDisabled'  : #ebebeb,
+    'diamond'       : #7187AA
+);
+
+@import 'base/style.scss';
+html,
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: map-get($colors, 'primary');
+    // line-height:get-line-height(14, 21);
+}

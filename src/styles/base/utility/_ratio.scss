@@ -1,0 +1,32 @@
+@mixin fluid-aspect($ratio: 1 1, $selector: "> :first-child") {
+	$selector: unquote($selector);
+
+	padding-bottom: nth($ratio, 2) / nth($ratio, 1) * 100%;
+	position: relative;
+
+	#{$selector} {
+		left: 0;
+		height: auto;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		width: 100%;
+		margin: auto;
+	}
+}
+
+.aspect-ratio\@square {
+	@include fluid-aspect(1 1, img);
+}
+
+.aspect-ratio\@280x358 {
+	@include fluid-aspect(280 358, img);
+}
+
+.aspect-ratio\@580x218 {
+	@include fluid-aspect(580 218, img);
+}
+
+.aspect-ratio\@1180x550 {
+	@include fluid-aspect(1180 550, img);
+}

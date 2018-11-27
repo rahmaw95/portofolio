@@ -1,0 +1,25 @@
+$sizes: '10', '12', '15', '20', '25', '30', '35', '40', '45', '50', '60', '100', '120', '150', '400';
+
+@each $size in $sizes {
+	.h\:#{$size} {
+		height: #{$size}px;
+	}
+	.w\:#{$size} {
+		width: #{$size}px;
+	}
+}
+
+@each $size in $sizes {
+	.m_h\:#{$size} {
+		min-height: #{$size}px;
+	}
+}
+
+@media (max-width: 767px) {
+	.w\:full\@m {
+		width: 100%;
+	}
+	.w\:18\@m {
+		width: 18px;
+	}
+}
